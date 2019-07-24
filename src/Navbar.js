@@ -1,8 +1,10 @@
 import React from "react";
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
-    <div>
+    <div
+      className={props.change ? "navbar navbar-after" : "navbar navbar-before"}
+    >
       <span>Home | </span>
       <span>About | </span>
       <span>Music | </span>
