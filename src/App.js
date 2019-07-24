@@ -16,7 +16,7 @@ function App() {
 
   const handleScroll = () => {
     const distanceY = window.pageYoffset || document.documentElement.scrollTop,
-      shrinkOn = 100;
+      shrinkOn = window.innerHeight - 58; // (navbar height = 58)
 
     if (distanceY > shrinkOn) {
       setChange(true);

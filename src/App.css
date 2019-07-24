@@ -1,24 +1,26 @@
 .App {
   text-align: center;
-  height: 3000px;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .header {
-  overflow: hidden;
+  height: calc(100vh - 58px);
   background: rgb(211, 211, 211);
-  height: 80px;
   width: 100vw;
-  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .navbar {
   color: red;
   background: rgb(211, 211, 211);
-  padding: 10px 0;
+  padding: 20px 0;
   width: 100vw;
+  z-index: 6;
 }
 
 .navbar-after {
@@ -27,13 +29,13 @@
 
 .logo {
   height: 60px;
-  font-size: 60px;
+  font-size: 120px;
   margin: 0;
 }
 
 .body {
   margin: 138px 0 0 0;
-  height: 100%;
+  height: 2600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
