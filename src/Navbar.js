@@ -3,7 +3,11 @@ import React from "react";
 export default function Navbar(props) {
   return (
     <div
-      className={props.change ? "navbar navbar-after" : "navbar navbar-before"}
+      className={
+        props.change
+          ? "navbar navbar-after navbar-after-text"
+          : "navbar navbar-before"
+      }
     >
       <span>Home | </span>
       <span>About | </span>
